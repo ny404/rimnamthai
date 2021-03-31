@@ -22,10 +22,67 @@ header {
 .index-cover { background: url('../images/hub-thai-index-cover.jpg') top center no-repeat #192739; background-size: cover; }
 .menu-cover { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739; background-size: cover; }
 .drinks-cover { background: url('../images/hub-thai-drinks-cover.jpg') top center no-repeat #192739; background-size: cover;  }
-#nav-menu { background: #F0EDED; font-size: 1.2em; }
+#nav-menu { 
+	background: #F0EDED;
+	font-size: 1.2em;
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 5%; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+}
 #nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; margin: 15px; 
 }
-.site-overlay {
+#container { margin-left: 5%; }
+.tooltip {
+  position:relative; /* making the .tooltip span a container for the tooltip text */
+}
+.tooltip:before {
+  content: attr(data-text); /* here's the magic */
+  position:absolute;
+
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+  
+  /* move to right */
+  left:100%;
+  margin-left:-5px; /* and add a small left margin */
+  
+  /* basic styles */
+  width:100px;
+  padding: 2.5%;
+  border-radius:5px;
+  background:#000;
+  color: #fff;
+  font-size: 0.8em;
+  text-align:center;
+  display:none;
+
+}
+.tooltip:after {
+  content: "";
+  position:absolute;
+  
+  /* position tooltip correctly */
+  left:100%;
+  margin-left:-20px;
+ 
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+ 
+  /* the arrow */
+  border:10px solid #000;
+  border-color: transparent black transparent transparent;
+  
+  display:none;
+}
+.tooltip:hover:before, .tooltip:hover:after {
+  display:block;
+}
+/*.site-overlay {
     z-index: 1;
     position: fixed;
     top: 0;
@@ -50,7 +107,7 @@ header {
     -o-transition-delay: delay 0s;
     transition-delay: delay 0s;
     cursor: url("../images/close.png") 16 16, pointer;
-}
+}*/
 
 main { background: #f7f9f9; }
 footer { 
@@ -199,18 +256,26 @@ ul.tabs button:focus { outline: none; border-bottom: 3px solid #20BF55; }
 }
 ul { list-style: none; padding: 10%; margin: 0; }
 li { line-height: 1.6em; padding: 5%;}
-ul.primary li a { color: #272d2d; }
+ul.primary, ul.primary li { padding: 0; }
+ul.primary li a { color: #272d2d;  text-align: center;}
 ul.secondary { font-size: 0.8em; text-align: center; }
 ul.secondary li { display: inline-block; }
 ul.secondary li a { text-decoration: underline; color: #272d2d; }
 li a { width: 100%; display: inline-block; }
 
-i.fas { margin: 0 6.5px; }
-i.fa-mobile-alt, i.fa-wine-glass-alt { margin: 0 8.5px; }
-i.fa-images { margin: 0 3.5px; }
+i.fas { /*margin: 0 6.5px;*/ vertical-align: middle; }
+i.fa-mobile-alt, i.fa-wine-glass-alt { /*margin: 0 8.5px;*/ }
+i.fa-images { /*margin: 0 3.5px;*/ }
+i.fa-fw { margin: 20%; font-size: 1.2rem; }
 
 ul.footer-links { text-align: right; }
 ul.footer-links li { display: inline-block; padding: 0 1em; }
+
+@media screen and (max-width: 1024px){
+	#nav-menu { width: 15%; }
+	#container { margin-left: 15%; }
+	i.fa-fw { font-size: 2rem; }
+}
 
 @media screen and (max-width: 767px){
 	header { height: 100vh; }
@@ -222,4 +287,29 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	.col-xs { width: 100%; }
 	ul.footer-links { text-align: center; }
 	#nav-btn { top: auto; left: 50%; bottom: 0; margin-left: -37.5%; width: 75%;  }
+	#nav-menu {
+		background: #F0EDED;
+		font-size: 1.2em;
+		height: auto; /* Full-height: remove this if you want "auto" height */
+		width: 100%; /* Set the width of the sidebar */
+		position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+		z-index: 1; /* Stay on top */
+		top: auto; /* Stay at the top */
+		left: 0;
+		bottom: 0;
+	}
+	#container { margin-left: 0; }
+	ul.primary li { display: inline-block; width: 20%; float: left;}
+	.tooltip:hover:before, .tooltip:hover:after { display: none; }
+	i.fa-home:after, i.fa-utensils:after, i.fa-mobile-alt:after, i.fa-wine-glass-alt:after, i.fa-shopping-bag:after {     
+		font-size: 0.5em;
+	    font-family: 'Roboto';
+	    line-height: 1.6em;
+	    display: block; 
+	}
+	i.fa-home:after { content: 'Home'; }
+	i.fa-utensils:after { content: 'Food'; }
+	i.fa-mobile-alt:after { content: 'Call'; }
+	i.fa-wine-glass-alt:after { content: 'Drink'; }
+	i.fa-shopping-bag:after { content: 'Order'; }
 }
