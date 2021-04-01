@@ -37,6 +37,8 @@ header {
 #container { margin-left: 5%; }
 .tooltip {
   position:relative; /* making the .tooltip span a container for the tooltip text */
+  padding: 10% 0;
+  display: block;
 }
 .tooltip:before {
   content: attr(data-text); /* here's the magic */
@@ -266,7 +268,7 @@ li a { width: 100%; display: inline-block; }
 i.fas { /*margin: 0 6.5px;*/ vertical-align: middle; }
 i.fa-mobile-alt, i.fa-wine-glass-alt { /*margin: 0 8.5px;*/ }
 i.fa-images { /*margin: 0 3.5px;*/ }
-i.fa-fw { margin: 20%; font-size: 1.2rem; }
+i.fa-fw { font-size: 1.2rem; }
 
 ul.footer-links { text-align: right; }
 ul.footer-links li { display: inline-block; padding: 0 1em; }
