@@ -5,7 +5,7 @@ h2 { font-size: 2em; line-height: 1.2em; }
 h3 { font-size: 1.6em; }
 a { text-decoration: none; color: #20BF55;}
 a:focus, button:focus { outline: 3px solid black; }
-.branding { width: 150px; height: 150px; border-radius: 75px; margin: auto; display: block; }
+.branding { width: 240px; height: 240px; display: block; align-self: flex-start; position: absolute; /* ADDED */}
 .branding-menu { width: 300px; height: 300px; margin: auto; display: block; }
 header { 
 	background-color: #192739;
@@ -19,7 +19,7 @@ header {
 	align-items: center;
 	flex-wrap: wrap;
 }
-.index-cover { background: url('../images/hub-thai-index-cover.jpg') top center no-repeat #192739; background-size: cover; }
+.index-cover { background: url('../images/rimnamthai-index-cover.jpg') bottom center no-repeat #192739; background-size: cover; height: 100vh; }
 .menu-cover { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739; background-size: cover; }
 .drinks-cover { background: url('../images/hub-thai-drinks-cover.jpg') top center no-repeat #192739; background-size: cover;  }
 #nav-menu { 
@@ -196,7 +196,7 @@ section h2, p.subheading { width: 100%; text-align: center; }
 .col-4 { width: 33.33333333%; }
 .col-6 { width: 50%; }
 .col-8 { width: 66.66666667%; }
-.col-9 { width: 75%; background: rgba(255,255,255,0.9); }
+.col-9 { width: 75%; }
 .col-12 { width: 100%; }
 
 ul.tabs { max-width: 1366px; width: 100%; padding: 0; margin: auto; display: flex;  flex-wrap: nowrap; overflow-x: scroll; -webkit-overflow-scrolling: touch; }
