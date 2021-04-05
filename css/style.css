@@ -12,15 +12,13 @@ h1, h2, h3 { font-family: 'ps-kinlock', serif; margin-top: 0; color: #E9B857;}
 h1 { font-size: 2.5em; line-height: 1.2em;}
 h2 { font-size: 2em; line-height: 1.2em; }
 h3 { font-size: 1.6em; }
-a { text-decoration: underline; color: #E9B857; }
+a { text-decoration: none; color: #E9B857; }
 a:focus, button:focus { outline: 3px solid black; }
 .superscript { font-size: 1.4em; margin: 0; font-weight: 300; }
 .sub { font-size: 1.2em; line-height: 1.6em; }
-.branding { width: 240px; height: 240px; display: block; align-self: flex-start; position: absolute; /* ADDED */}
-.branding-alt { width: 240px; height: 240px; display: block; margin: auto; }
+.branding { width: 240px; height: 240px; display: block; margin: auto; }
 .branding-menu { width: 300px; height: 300px; margin: auto; display: block; }
 header { 
-	background-color: #192739;
 	height: 85vh;
 	width: auto;
 	margin: auto;
@@ -30,10 +28,12 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	text-align: center;
+	color: #fff;
 }
-.index-cover { background: url('../images/rimnamthai-index-cover.jpg') bottom center no-repeat #192739; background-size: cover; height: 100vh; color: #fff; text-align: center; }
-.menu-cover { background: url('../images/hub-thai-cover.jpeg') top center no-repeat #192739; background-size: cover; }
-.drinks-cover { background: url('../images/hub-thai-drinks-cover.jpg') top center no-repeat #192739; background-size: cover;  }
+.index-cover { background: url('../images/rimnamthai-index-cover.jpg') bottom center no-repeat #16303A; background-size: cover; height: 100vh; }
+.menu-cover { background: url('../images/rimnamthai-menu-cover.jpg') top center no-repeat #16303A; background-size: cover; }
+.drinks-cover { background: url('../images/rimnamthai-drinks-cover.jpg') top center no-repeat #16303A; background-size: cover;  }
 #nav-menu { 
 	background: #F0EDED;
 	font-size: 1.2em;
@@ -44,8 +44,8 @@ header {
 	top: 0; /* Stay at the top */
 	left: 0;
 }
-#nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; margin: 15px; 
-}
+/*#nav-btn { display: block; width: auto; position: fixed; z-index: 200; top: 0; left: 0; font-size: 1.2em; margin: 15px; 
+}*/
 #container { margin-left: 5%; }
 .tooltip {
   position:relative; /* making the .tooltip span a container for the tooltip text */
@@ -272,9 +272,9 @@ ul { list-style: none; padding: 10%; margin: 0; }
 li { line-height: 1.6em; padding: 5%;}
 ul.primary, ul.primary li { padding: 0; }
 ul.primary li a { color: #272d2d;  text-align: center;}
-ul.secondary { font-size: 0.8em; text-align: center; }
-ul.secondary li { display: inline-block; }
-ul.secondary li a { text-decoration: underline; color: #272d2d; }
+ul.secondary { text-align: center; padding: 0; }
+ul.secondary li { display: inline-block; padding: 1%; }
+ul.secondary li a { text-decoration: underline; color: #83D1DE;}
 li a { width: 100%; display: inline-block; }
 
 i.fas { /*margin: 0 6.5px;*/ vertical-align: middle; }
@@ -315,6 +315,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	}
 	#container { margin-left: 0; }
 	ul.primary li { display: inline-block; width: 20%; float: left;}
+	ul.secondary li { display: block; }
 	.tooltip:hover:before, .tooltip:hover:after { display: none; }
 	i.fa-home:after, i.fa-utensils:after, i.fa-mobile-alt:after, i.fa-wine-glass-alt:after, i.fa-shopping-bag:after {     
 		font-size: 0.5em;
