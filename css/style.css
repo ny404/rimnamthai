@@ -211,11 +211,22 @@ section h2, p.subheading { width: 100%; text-align: center; }
 .col-9 { width: 75%; }
 .col-12 { width: 100%; }
 
-ul.tabs { max-width: 1366px; width: 100%; padding: 0; margin: auto; display: flex;  flex-wrap: nowrap; overflow-x: scroll; -webkit-overflow-scrolling: touch; }
+.sticky { position: fixed; top: 0; width: 100%; }
+
+ul.tabs { 
+	max-width: 1366px;
+	width: 100%;
+	padding: 0;
+	margin: auto;
+	display: flex; 
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;  /* Firefox */
+	-ms-overflow-style: none;  /* IE and Edge */
+}
 ul.tabs::-webkit-scrollbar { 
 	display: none;
-	-ms-overflow-style: none;  /* IE and Edge */
- 	scrollbar-width: none;  /* Firefox */
 }
 ul.tabs li {
 	flex: 0 0 auto;
