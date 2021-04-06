@@ -211,7 +211,7 @@ section h2, p.subheading { width: 100%; text-align: center; }
 .col-9 { width: 75%; }
 .col-12 { width: 100%; }
 
-.sticky { position: fixed; top: 0; width: 100%; }
+/*.sticky { position: fixed; top: 0; padding: 0;}*/
 
 ul.tabs { 
 	max-width: 1366px;
