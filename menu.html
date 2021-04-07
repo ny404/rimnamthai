@@ -44,7 +44,7 @@
         </div>
       </header>
       <main>
-        <nav class="scroll-wrapper" id="food-menu" role="navigation">
+        <nav class="scroll-wrapper" role="navigation">
           <ul class="tabs" role="tablist">
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="appetizers-tab" id="appetizers">Appetizers</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="soups-tab" id="soups">Soups</button></li>
@@ -60,12 +60,13 @@
         </nav>
         <section tabindex="0" role="tabpanel" id="appetizers-tab" aria-labelledby="appetizers">
           <h2>Appetizers</h2>
+          <hr>
           <div class="food-item col-xs">
             <img src="images/loading.png" data-src="images/hub-thai-fried-wonton.jpg" class="preview" alt="">
             <div class="content">
-              <h3>Fried Wonton</h3>
-              <p>Chicken and shrimp wonton.</p>
-              <p class="price">$5.99</p>
+              <h3>Koo Moo Yang BBQ Pork</h3>
+              <p>Grilled marinated pork with spicy tamarind lime dipping sauce.</p>
+              <p class="price">$10.50</p>
             </div>
           </div>
           <div class="food-item col-xs">
@@ -217,6 +218,7 @@
         <section tabindex="0" role="tabpanel" id="soups-tab" aria-labelledby="soups" hidden="">
           <h2>Soups</h2>
           <p class="subheading">Choice of Chicken, Shrimp, Tofu, or Vegetables</p>
+          <hr>
           <div class="food-item col-xs">
             <img src="images/loading.png" data-src="images/hub-thai-house-soup.jpg" class="preview" alt="">
             <div class="content">
@@ -313,7 +315,8 @@
         </section>
         <section tabindex="0" role="tabpanel" id="rice-noodles-tab" aria-labelledby="rice-noodles" hidden="">
           <h2>Rice & Noodles</h2>
-          <p class="subheading">Chicken, Tofu, Vegetables: $11.99<br>Shrimp, Beef, Veggies & Tofu, Mock Duck, Squid: $13.99</p>
+          <p class="subheading">Chicken, Tofu, Vegetables: <span class="price">$11.99</span><br>Shrimp, Beef, Veggies & Tofu, Mock Duck, Squid: <span class="price">$13.99</span></p>
+          <hr>
           <div class="food-item col-xs">
             <img src="images/loading.png" data-src="images/hub-thai-basil-fried-rice.jpg" class="preview" alt="">
             <div class="content">
