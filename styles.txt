@@ -2,3 +2,6 @@
 #16303A - Background / Accent
 #15435b - Accent 2
 #83D1DE
+#ff8993 - Spicy
+#33c825 - Vegetarian
+#25c88c - Vegan
