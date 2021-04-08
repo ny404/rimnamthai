@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/offside.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.ico?v=1" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -49,7 +49,8 @@
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="appetizers-tab" id="appetizers">Appetizers</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="salads-tab" id="salads">Salads</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="soups-tab" id="soups">Soups</button></li>
-            <li role="presentation"><button role="tab" aria-selected="true" aria-controls="rice-noodles-tab" id="rice-noodles">Rice & Noodles</button></li>
+            <li role="presentation"><button role="tab" aria-selected="true" aria-controls="duck-tab" id="duck">Duck</button></li>
+            <li role="presentation"><button role="tab" aria-selected="true" aria-controls="noodles-tab" id="noodles">Noodles</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="curries-tab" id="curries">Curries</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="entrees-tab" id="entrees">Entrees</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="chef-specials-tab" id="chef-specials">Chef's Specials</button></li>
@@ -155,43 +156,6 @@
             </div>
           </div>
         </section>
-        <section tabindex="0" role="tabpanel" id="soups-tab" aria-labelledby="soups" hidden="">
-          <h2>Soups</h2>
-          <p class="subheading">Choice of Chicken, Shrimp, Tofu, or Vegetables</p>
-          <hr>
-          <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-house-soup.jpg" class="preview" alt="">
-            <div class="content">
-              <h3>House Soup</h3>
-              <p>Vegetable soup in clear broth.</p>
-              <p class="price">$5.99 Small / $10.99 Large</p>
-            </div>
-          </div>
-          <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-tom-kha-soup.jpg" class="preview" alt="">
-            <div class="content">
-              <h3>Tom Ka Soup</h3>
-              <p>Coconut milk, galangal, lime juice, and mushroom.</p>
-              <p class="price">$5.99 Small / $9.99 Large</p>
-            </div>
-          </div>
-          <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-tom-yum-soup.jpg" class="preview" alt="">
-            <div class="content">
-              <h3>Tom Yum Soup <span class="tags spicy">Spicy</span></h3>
-              <p>Chili, galangal, lemongrass, lime juice, and mushroom.</p>
-              <p class="price">$5.99 Small / $9.99 Large</p>
-            </div>
-          </div>
-          <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-wonton-soup.jpg" class="preview" alt="">
-            <div class="content">
-              <h3>Wonton Soup</h3>
-              <p>Bok choy, beansprouts, chicken and shrimp wonton.</p>
-              <p class="price">$5.99 Small / $9.99 Large</p>
-            </div>
-          </div>
-        </section>
         <section tabindex="0" role="tabpanel" id="salads-tab" aria-labelledby="salads" hidden="">
           <h2>Salads</h2>
           <hr>
@@ -235,57 +199,89 @@
             </div>
           </div>
         </section>
-        <section tabindex="0" role="tabpanel" id="rice-noodles-tab" aria-labelledby="rice-noodles" hidden="">
-          <h2>Rice & Noodles</h2>
-          <p class="subheading">Chicken, Tofu, Vegetables: <span class="price">$11.99</span><br>Shrimp, Beef, Veggies & Tofu, Mock Duck, Squid: <span class="price">$13.99</span></p>
+        <section tabindex="0" role="tabpanel" id="soups-tab" aria-labelledby="soups" hidden="">
+          <h2>Soups</h2>
           <hr>
           <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-basil-fried-rice.jpg" class="preview" alt="">
+            <img src="images/loading.png" data-src="images/rimnamthai-tom-yum-nam-kon.jpg" class="preview" alt="">
             <div class="content">
-              <h3>Basil Fried Rice <span class="tags spicy">Spicy</span></h3>
-              <p>Basil, bell pepper, egg, garlic, long hot chili pepper, and onion.</p>
+              <h3>Tom Yum Nam Kon <span class="tags spicy">Spicy</span></h3>
+              <p>Spicy lemongrass broth with mushroom, bell pepper, and coconut milk.</p>
+              <p class="price">$6.50 Small / $12.00 Large</p>
             </div>
           </div>
           <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-chili-paste-fried-rice.jpg" class="preview" alt="">
+            <img src="images/loading.png" data-src="images/rimnamthai-tom-kha-kai.jpg" class="preview" alt="">
             <div class="content">
-              <h3>Chili Paste Fried Rice <span class="tags spicy">Spicy</span></h3>
-              <p>Basil, bell pepper, egg, garlic, long hot chili pepper, and onion.</p>
+              <h3>Tom Kha Kai</h3>
+              <p>Galangal coconut broth with chicken and mushroom.</p>
+              <p class="price">$6.50 Small / $12.00 Large</p>
+            </div>
+          </div>
+        </section>
+        <section tabindex="0" role="tabpanel" id="duck-tab" aria-labelledby="duck" hidden="">
+          <h2>Duck</h2>
+          <p class="subheading">Served with white rice</p>
+          <hr>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Basil Duck</h3>
+              <p>Fried duck breast with Thai basil, fresh bird eye chili, onion, and garlic.</p>
+              <p class="price">$22.00</p>
             </div>
           </div>
           <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-pineapple-fried-rice.jpg" class="preview" alt="">
-            <div class="content">
-              <h3>Pineapple Fried Rice</h3>
-              <p>Cashew nut, curry powder, egg, garlic, onion, pineapple, scallion, and tomato.</p>
+            <div class="content no-image">
+              <h3>Panang Duck</h3>
+              <p>Deep fried duck in dry panang curry and lime leaves.</p>
+              <p class="price">$22.00</p>
             </div>
           </div>
           <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-fried-rice.jpg" class="preview" alt="">
-            <div class="content">
-              <h3>Thai Fried Rice</h3>
-              <p>Chinese broccoli, egg, garlic, onion, scallion, and tomato.</p>
+            <div class="content no-image">
+              <h3>Red Curry Duck</h3>
+              <p>Duck breast in red curry, pineapple, and tomato.</p>
+              <p class="price">$22.00</p>
             </div>
           </div>
           <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-drunken-noodle.jpg" class="preview" alt="">
+            <div class="content no-image">
+              <h3>Green Curry Duck</h3>
+              <p>Duck breast in green curry, pineapple, and tomato.</p>
+              <p class="price">$22.00</p>
+            </div>
+          </div>
+        </section>
+        <section tabindex="0" role="tabpanel" id="noodles-tab" aria-labelledby="noodles" hidden="">
+          <h2>Noodles</h2>
+          <p class="subheading">Chicken, Tofu, Vegetable: <span class="price">$13.00</span><br>Beef, Shrimp: <span class="price">$16.00</span><br>Mixed Seafood: <span class="price">$18.00</span></p>
+          <hr>
+          <div class="food-item col-xs">
+            <img src="images/loading.png" data-src="images/rimnamthai-pad-thai.jpg" class="preview" alt="">
             <div class="content">
-              <h3>Drunken Noodle <span class="tags spicy">Spicy</span></h3>
-              <p>Basil, bell pepper, egg, garlic, long hot chili pepper, onion, and tomato.</p>
+              <h3>Pad Thai</h3>
+              <p>Stir fried fresh rice noodles with bean sprouts, chive, scallion, roasted peanuts, and egg.</p>
             </div>
           </div>
           <div class="food-item col-xs">
             <img src="images/loading.png" data-src="images/rimnamthai-pad-see-ew.jpg" class="preview" alt="">
             <div class="content">
               <h3>Pad See Ew</h3>
-              <p>Chinese broccoli, egg, and garlic.</p>
+              <p>Stir fried wide rice noodles with egg and Chinese broccoli in black soy sauce.</p>
             </div>
           </div>
           <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-pad-thai.jpg" class="preview" alt="">
+            <img src="images/loading.png" data-src="images/rimnamthai-pad-kee-mow.jpg" class="preview" alt="">
             <div class="content">
-              <h3>Pad Thai</h3>
-              <p>Egg, peanut, scallion, and beansprouts.</p>
+              <h3>Pad Kee Mow (Drunken Noodle) <span class="tags spicy">Spicy</span></h3>
+              <p>Sauteed rice noodles with egg, onion, tomatoes, hot pepper, and basil leaves in chili basil sauce.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <img src="images/loading.png" data-src="images/rimnamthai-pad-woonsen.jpg" class="preview" alt="">
+            <div class="content">
+              <h3>Pad Woonsen</h3>
+              <p>Glass noodle, carrot, mushroom, bean sprouts, and egg.</p>
             </div>
           </div>
         </section>
@@ -392,13 +388,6 @@
             <div class="content">
               <h3>Pad Prik Khing <span class="tags spicy">Spicy</span></h3>
               <p>Bell pepper and string bean.</p>
-            </div>
-          </div>
-          <div class="food-item col-xs">
-            <img src="images/loading.png" data-src="images/rimnamthai-pad-woonsen.jpg" class="preview" alt="">
-            <div class="content">
-              <h3>Pad Woonsen</h3>
-              <p>Glass noodle. celery, egg, glass noodle, napa, onion, scallion, and tomato.</p>
             </div>
           </div>
           <div class="food-item col-xs">
