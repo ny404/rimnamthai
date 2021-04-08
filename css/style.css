@@ -34,7 +34,7 @@ header {
 }
 .index-cover { background: url('../images/rimnamthai-index-cover.jpg') bottom center no-repeat #16303A; background-size: cover; height: 100vh; }
 .menu-cover { background: url('../images/rimnamthai-menu-cover.jpg') top center no-repeat #16303A; background-size: cover; }
-.drinks-cover { background: url('../images/rimnamthai-drinks-cover.jpg') top center no-repeat #16303A; background-size: cover;  }
+.drinks-cover { background: url('../images/rimnamthai-drinks-cover.jpg') center no-repeat #16303A; background-size: cover;  }
 #nav-menu { 
 	background: #F0EDED;
 	font-size: 1.2em;
