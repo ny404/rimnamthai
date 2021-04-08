@@ -203,7 +203,7 @@ nav.scroll-wrapper { padding: 0 5%; background: #15435b; }
 
 section h2, p.subheading { width: 100%; }
 p.subheading { color: #E9B857; }
-hr { width: 100%; height: 1px; color: #E9B857; background: #E9B857; }
+hr { width: 100%; height: 1px; color: #E9B857; background: #E9B857; border: none; }
 
 .col-1 { width: 8.33333333%; }
 .col-2 { width: 16.66666667%; }
