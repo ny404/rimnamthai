@@ -46,6 +46,8 @@
       <main>
         <nav class="scroll-wrapper" role="navigation">
           <ul class="tabs" role="tablist">
+            <li role="presentation"><button role="tab" aria-selected="true" aria-controls="lunch-tab" id="lunch">Lunch</button></li>
+            <li role="presentation"><button role="tab" aria-selected="true" aria-controls="vegan-tab" id="vegan">Vegan</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="appetizers-tab" id="appetizers">Appetizers</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="salads-tab" id="salads">Salads</button></li>
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="soups-tab" id="soups">Soups</button></li>
@@ -60,7 +62,194 @@
             <li role="presentation"><button role="tab" aria-selected="true" aria-controls="desserts-tab" id="desserts">Desserts</button></li>
           </ul>
         </nav>
-        <section tabindex="0" role="tabpanel" id="appetizers-tab" aria-labelledby="appetizers">
+        <section tabindex="0" role="tabpanel" id="lunch-tab" aria-labelledby="lunch">
+          <h2>Lunch Specials</h2>
+          <p class="subheading">Served with Spring Roll and choice of Tom Yum Soup or House Salad</p>
+          <p class="subheading">Chicken, Tofu, Vegetable: <span class="price">$11.95</span><br>Beef, Shrimp: <span class="price">$14.95</span></p>
+          <hr>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Lunch Pad See Ew</h3>
+              <p>Stir fried wide rice noodles with egg and Chinese broccoli in black soy sauce.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <img src="images/loading.png" data-src="images/rimnamthai-pad-kee-mow-lunch.jpg" class="preview" alt="">
+            <div class="content">
+              <h3>Lunch Pad Kee Mow <span class="tags spicy">Spicy</span></h3>
+              <p class="description">Sauteed rice noodles with egg, onion, tomatoes, hot pepper, and basil leaves in chili sauce.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Lunch Pad Thai</h3>
+              <p class="description">Stir fried fresh rice noodles with bean sprouts, chive, scallion, roasted peanuts, and egg.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Lunch Wok Basil</h3>
+              <p class="description">Stir fried with Thai basil, fresh bird eye chili, onion, and garlic topped with fried egg.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Lunch Basil Fried Rice</h3>
+              <p class="description">Fried rice with egg, onion, scallion, and carrot.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Lunch Panang Curry <span class="tags spicy">Spicy</span></h3>
+              <p class="description">Dry curry with string beans and bell peppers with jasmine rice.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Lunch Green Curry Noodle Soup <span class="tags spicy">Spicy</span></h3>
+              <p class="description">Rice vermicelli with bell peppers, Thai eggplant, bamboo shoot, and basil leaves in green curry soup.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Lunch Vegetarian Delight <span class="tags vegetarian">Vegetarian</span></h3>
+              <p class="description">Mixed Asian greens stir fried in garlic sauce.</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <img src="images/loading.png" data-src="images/rimnamthai-kai-jeow-moo-sub.jpg" class="preview" alt="">
+            <div class="content">
+              <h3>Lunch Kai Jeow Moo Sub</h3>
+              <p class="description">Thai pork omelet and scallion with jasmine rice and sriracha sauce.</p>
+            </div>
+          </div>
+        </section>
+        <section tabindex="0" role="tabpanel" id="vegan-tab" aria-labelledby="vegan" hidden="">
+          <h2>Vegan Appetizers</h2>
+          <hr>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Spring Roll <span class="tags vegan">Vegan</span></h3>
+              <p>Crispy spring roll stuffed with mixed vegetables.</p>
+              <p class="price">$6.50</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Chive Pancake <span class="tags vegan">Vegan</span></h3>
+              <p>Pan fried chive pancake.</p>
+              <p class="price">$8.50</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Fried Tofu <span class="tags vegan">Vegan</span></h3>
+              <p>Golden fried tofu served with sweet chili sauce.</p>
+              <p class="price">$6.50</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Vegetable Dumplings <span class="tags vegan">Vegan</span></h3>
+              <p>Steamed vegetable dumplings served with mushroom soy sauce.</p>
+              <p class="price">$8.50</p>
+            </div>
+          </div>
+          <h2>Vegan Entrées</h2>
+          <hr>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Pad Thai <span class="tags vegan">Vegan</span></h3>
+              <p>Stir fried rice noodles with bean sprouts, scallion, and roasted peanuts with tofu.</p>
+              <p class="price">$13.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Pad See Ew <span class="tags vegan">Vegan</span></h3>
+              <p>Stir fried wide rice noodles with Chinese broccoli and tofu.</p>
+              <p class="price">$13.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Pad Kee Mow (Drunken Noodle) <span class="tags spicy">Spicy </span><span class="tags vegan">Vegan</span></h3>
+              <p>Stir fried wide rice noodles with onion, tomatoes, hot pepper, and basil leaves in chili basil and tofu.</p>
+              <p class="price">$13.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Pad Woonsen <span class="tags vegan">Vegan</span></h3>
+              <p>Stir fried glass noodle with carrot, mushroom, bean sprouts, napa, scallion, and tofu.</p>
+              <p class="price">$13.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Kao Pad <span class="tags vegan">Vegan</span></h3>
+              <p>Fried rice with tofu, onion, scallion, and carrot.</p>
+              <p class="price">$13.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Pineapple Fried Rice <span class="tags vegan">Vegan</span></h3>
+              <p>Fried rice with curry powder, pineapple, onion, scallion, carrot, cashew nut, and tofu.</p>
+              <p class="price">$15.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Green Curry <span class="tags spicy">Spicy </span><span class="tags vegan">Vegan</span></h3>
+              <p>Bell peppers, eggplant, bamboo shoot, string bean, basil leaves, and tofu served with jasmine rice.</p>
+              <p class="price">$14.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Panang Curry <span class="tags spicy">Spicy </span><span class="tags vegan">Vegan</span></h3>
+              <p>Dry curry with tofu, string beans, bell peppers, and kaffir leaves served with jasmine rice.</p>
+              <p class="price">$15.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Wok Cashew Nut <span class="tags vegan">Vegan</span></h3>
+              <p>Stir fried with bell peppers, pineapple, mushroom, cashew nut, onion, and tofu in tangy chili sauce served with jasmine rice.</p>
+              <p class="price">$16.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Wok Basil <span class="tags vegan">Vegan</span></h3>
+              <p>Stir fried with tofu, string bean, bell pepper, Thai basil, fresh bird eye chili, onion, and garlic served with jasmine rice.</p>
+              <p class="price">$14.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Crispy Tofu Rama <span class="tags vegan">Vegan</span></h3>
+              <p>Steamed broccoli, carrot, and tofu with peanut sauce served with jasmine rice.</p>
+              <p class="price">$14.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Basil Eggplant <span class="tags vegan">Vegan</span></h3>
+              <p>Sauteed eggplant, bamboo shoot, bell pepper, Thai basil, fresh bird eye chili, onion, and garlic served with jasmine rice.</p>
+              <p class="price">$13.00</p>
+            </div>
+          </div>
+          <div class="food-item col-xs">
+            <div class="content no-image">
+              <h3>Green Curry Tofu Noodle Soup <span class="tags spicy">Spicy </span><span class="tags vegan">Vegan</span></h3>
+              <p>Rice vermicelli noodle in green curry broth with eggplant, bamboo shoot, and bell pepper topped with bean sprout and basil leaves.</p>
+              <p class="price">$15.00</p>
+            </div>
+          </div>
+        </section>
+        <section tabindex="0" role="tabpanel" id="appetizers-tab" aria-labelledby="appetizers" hidden="">
           <h2>Appetizers</h2>
           <hr>
           <div class="food-item col-xs">
@@ -557,9 +746,9 @@
       </main>
       <footer>
         <ul class="secondary">
-          <li><a href="/">Privacy Policy</a></li>
-          <li><a href="/">Terms of Use</a></li>
-          <li><a href="/">Accessibility</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+          <li><a href="/accessibility">Accessibility</a></li>
         </ul>
         <address>
           52 Jay St<br>
