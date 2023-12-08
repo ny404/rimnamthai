@@ -366,7 +366,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	ul.primary li { display: inline-block; width: 20%; float: left;}
 	ul.secondary li { display: block; }
 	.tooltip:hover:before, .tooltip:hover:after { display: none; }
-	i.fa-home:after, i.fa-utensils:after, i.fa-mobile-alt:after, i.fa-wine-glass-alt:after, i.fa-shopping-bag:after {     
+	i.fa-home:after, i.fa-utensils:after, i.fa-book-open:after, i.fa-mobile-alt:after, i.fa-wine-glass-alt:after, i.fa-shopping-bag:after {     
 		font-size: 0.5em;
 	    font-family: 'Barlow', sans-serif;
 	    font-weight: 300;
@@ -376,6 +376,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	}
 	i.fa-home:after { content: 'Home'; }
 	i.fa-utensils:after { content: 'Food'; }
+	i.fa-book-open:after { content: 'Cater'; }
 	i.fa-mobile-alt:after { content: 'Call'; }
 	i.fa-wine-glass-alt:after { content: 'Drink'; }
 	i.fa-shopping-bag:after { content: 'Order'; }
