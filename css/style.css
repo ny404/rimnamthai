@@ -154,7 +154,7 @@ button {
 a.modal-button { 
 	width: 150px;
 	padding: 15px;
-	margin: auto;
+	margin: 2.5% auto;
 	/*background: #EDB63F;*/
 	color: #EDB63F;
 	text-align: center;
@@ -185,11 +185,11 @@ a.map-button {
     -webkit-transition: opacity .25s ease-in-out;
 }
 button:hover, a.map-button:hover { opacity: 0.8; }
-a.modal-button:hover { background: #EDB63F; color: #fff; }
+a.modal-button:hover, a.modal-button.highlighted { background: #f59735; color: #fff; }
 .modal { background: #05060D !important; }
 .modal a.close-modal { display: none !important; }
 .modal img { display: block; max-width: 360px; width: 100%; margin: auto; }
-.modal p { color: #fff; text-align: center; }
+.modal p { color: #fff; }
 
 .full-height { height: 100vh; }
 
@@ -350,6 +350,7 @@ ul.footer-links li { display: inline-block; padding: 0 1em; }
 	/*.divider img { width: 240px; height: 103px; }*/
 	.col-xs { width: 100%; }
 	ul.footer-links { text-align: center; }
+	a.modal-button { display: block; }
 	#nav-btn { top: auto; left: 50%; bottom: 0; margin-left: -37.5%; width: 75%;  }
 	#nav-menu {
 		background: #F0EDED;
